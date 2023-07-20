@@ -86,9 +86,13 @@ div .container {
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(2 1fr);
+  grid-template-rows: repeat(2 2fr);
   justify-content: center;
   align-items: center;
-  grid-template-areas: "main section" "main section"; }
+  grid-template-areas: "main-sn box-imagen" "main-sn box-imagen"; }
+
+div main .main-sn {
+  grid-area: main-sn; }
 
 div main p .sobren {
   display: inline-block;
@@ -106,13 +110,15 @@ div main p #parrafo1 {
 div main p #ultimo {
   margin-top: 10px; }
 
-div main section {
+div section {
   margin: 0;
   width: 300px; }
-  div main section .casa2 {
+  div section .box-imagen {
+    grid-area: box-imagen; }
+  div section .casa2 {
     width: 400px;
     height: 500px;
     position: relative;
     top: 60px;
-    left: 100px;
+    left: 20px;
     right: 50px; }

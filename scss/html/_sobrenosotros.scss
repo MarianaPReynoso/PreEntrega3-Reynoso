@@ -5,16 +5,18 @@ div{
         height: 100vh;
         display: grid;
         grid-template-columns: repeat(2 1fr);
-        // grid-template-rows: repeat(2 2fr);
+        grid-template-rows: repeat(2 2fr);
         justify-content: center;
         align-items: center;
 
         grid-template-areas: 
-        "main section"
-        "main section";
-
+        "main-sn box-imagen"
+        "main-sn box-imagen";
     }
     main{
+        .main-sn{
+            grid-area: main-sn;
+        }
         p{
             .sobren{
                 display: inline-block;
@@ -33,17 +35,21 @@ div{
                 margin-top: 10px;
             }
         }
-        section{
-            margin: 0;
-            width: 300px;
-            .casa2{
-                width: 400px;
-                height: 500px;
-                position: relative;
-                top: 60px;
-                left: 100px;  
-                right: 50px;
-            }
+    }    
+    section{
+        margin: 0;
+        width: 300px;
+        .box-imagen{
+            grid-area: box-imagen;
+        }
+        .casa2{
+            width: 400px;
+            height: 500px;
+            position: relative;
+            top: 60px;
+            left: 20px;  
+            right: 50px;
         }
     }
+    
 }
