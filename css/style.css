@@ -1,0 +1,118 @@
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif; }
+
+/*GENERAL*/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #edeec9;
+  align-items: center; }
+  body header {
+    background-color: #A3B18A;
+    margin-bottom: 20px; }
+  body main h1 {
+    margin-top: 30px;
+    text-align: center; }
+  body footer {
+    margin-top: 80px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    text-align: center;
+    font-size: 10px;
+    bottom: 0; }
+
+/*INDEX*/
+main .slide {
+  transition: 2s; }
+  main .slide div .carousel-item {
+    width: 1200px;
+    height: 300px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 80px;
+    justify-content: center;
+    object-fit: cover; }
+
+main p {
+  margin: 10px 35px;
+  text-align: justify; }
+
+main h2 {
+  margin-top: 50px;
+  text-align: center; }
+
+main .box-imagen {
+  display: flex;
+  justify-content: center; }
+
+main .casa {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  margin-top: 3%;
+  margin-bottom: 0;
+  margin-left: 3%;
+  margin-right: 3%;
+  cursor: pointer;
+  display: flex; }
+
+main .casa:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  box-shadow: 0px 13px 30px -3px #3d3c3c; }
+
+main .box-texto {
+  margin-top: -4%;
+  margin-right: 1%;
+  margin-left: 2%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around; }
+  main .box-texto h3 {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    text-align: center; }
+    main .box-texto h3 .opciones {
+      margin-left: 10%; }
+    main .box-texto h3 .opciones2 {
+      margin-left: 3%; }
+
+/*SOBRE NOSOTROS*/
+div .container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2 1fr);
+  justify-content: center;
+  align-items: center;
+  grid-template-areas: "main section" "main section"; }
+
+div main p .sobren {
+  display: inline-block;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 500px;
+  justify-content: center;
+  align-items: center; }
+
+div main p #parrafo1 {
+  margin-top: 60px; }
+
+div main p #ultimo {
+  margin-top: 10px; }
+
+div main section {
+  margin: 0;
+  width: 300px; }
+  div main section .casa2 {
+    width: 400px;
+    height: 500px;
+    position: relative;
+    top: 60px;
+    left: 100px;
+    right: 50px; }

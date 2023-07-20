@@ -1,0 +1,49 @@
+/*SOBRE NOSOTROS*/
+
+div{
+    .container{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(2 1fr);
+        // grid-template-rows: repeat(2 2fr);
+        justify-content: center;
+        align-items: center;
+
+        grid-template-areas: 
+        "main section"
+        "main section";
+
+    }
+    main{
+        p{
+            .sobren{
+                display: inline-block;
+                justify-content: center;
+                margin-bottom: 20px;
+                margin-left: 10px;
+                margin-right: 10px;
+                width: 500px;
+                justify-content: center;
+                align-items: center;            
+            }
+            #parrafo1{
+                margin-top: 60px;
+            }
+            #ultimo{
+                margin-top: 10px;
+            }
+        }
+        section{
+            margin: 0;
+            width: 300px;
+            .casa2{
+                width: 400px;
+                height: 500px;
+                position: relative;
+                top: 60px;
+                left: 100px;  
+                right: 50px;
+            }
+        }
+    }
+}
