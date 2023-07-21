@@ -83,42 +83,96 @@ main .box-texto {
 
 /*SOBRE NOSOTROS*/
 div .container {
-  height: 100vh;
   display: grid;
-  grid-template-columns: repeat(2 1fr);
-  grid-template-rows: repeat(2 2fr);
+  grid-template-columns: repeat(2 0.5fr);
+  grid-template-rows: repeat(2 1fr);
   justify-content: center;
   align-items: center;
   grid-template-areas: "main-sn box-imagen" "main-sn box-imagen"; }
 
-div main .main-sn {
-  grid-area: main-sn; }
-
-div main p .sobren {
-  display: inline-block;
-  justify-content: center;
-  margin-bottom: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 500px;
-  justify-content: center;
-  align-items: center; }
-
-div main p #parrafo1 {
-  margin-top: 60px; }
-
-div main p #ultimo {
-  margin-top: 10px; }
+div main {
+  background-color: red;
+  width: 50%;
+  margin-left: 0;
+  margin-right: 0; }
+  div main .main-sn {
+    grid-area: main-sn; }
+  div main .sobren {
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    justify-content: center;
+    align-items: center; }
+  div main #parrafo1 {
+    margin-top: 60px; }
+  div main #ultimo {
+    margin-top: 10px; }
 
 div section {
   margin: 0;
-  width: 300px; }
+  width: 50%;
+  background-color: blue; }
   div section .box-imagen {
     grid-area: box-imagen; }
   div section .casa2 {
     width: 400px;
     height: 500px;
-    position: relative;
-    top: 60px;
-    left: 20px;
+    top: 30px;
+    left: 50px;
     right: 50px; }
+
+/*DESTINOS*/
+div .container2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-auto-rows: auto auto;
+  justify-content: center;
+  grid-template-areas: "main-titulo main-titulo" "section-uno section-dos" "section-tres section-cuatro" "footer footer";
+  gap: 10px; }
+  div .container2 main .main-titulo {
+    grid-area: main-titulo; }
+  div .container2 section .destino {
+    width: 330px;
+    height: 270px;
+    margin: 15px; }
+  div .container2 section .section-uno {
+    grid-area: section-uno; }
+  div .container2 section .section-dos {
+    grid-area: section-dos; }
+  div .container2 section .section-tres {
+    grid-area: section-tres; }
+  div .container2 section .section-cuatro {
+    grid-area: section-cuatro; }
+  div .container2 section .destino-img {
+    width: 330px;
+    height: 270px;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; }
+  div .container2 section .destino-img:hover {
+    transform: scale(1.05);
+    transition: 0.1s;
+    box-shadow: 0px 10px 30px -1px #3d3c3c; }
+  div .container2 section h2 .subtitulo {
+    margin-top: 1%;
+    text-align: center;
+    font-size: 24px; }
+  div .container2 footer {
+    grid-area: footer; }
+
+/*PROMOCIONES*/
+main .promociones img {
+  width: 800px;
+  height: 250px;
+  object-fit: cover; }
+  main .promociones img .casa5 {
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    cursor: pointer;
+    transition: .5s; }
+  main .promociones img .casa5:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 15px 30px -3px #3d3c3c; }
