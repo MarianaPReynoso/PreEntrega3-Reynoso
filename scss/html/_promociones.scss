@@ -2,19 +2,22 @@
 
 main{
     .promociones{
+        .subtitulo-prom{
+            margin-top: 40px;
+        }
         img{
             width: 800px;
             height: 250px;
             object-fit: cover;
+            margin-top: 2%;
+            margin-bottom: 3%;
             .casa5{
-                margin-top: 2%;
-                margin-left: 20%;
-                margin-bottom: 5%;
-                cursor: pointer;
-                transition: .5s;            
+                // margin-left: 20%;
+                cursor: pointer;      
             }
-            .casa5:hover{
+            &:hover{
                 transform: scale(1.02);
+                transition: .5s;  
                 box-shadow: 0px 15px 30px -3px rgb(61, 60, 60);
             }
         }
