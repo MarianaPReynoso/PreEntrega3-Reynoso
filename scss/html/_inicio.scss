@@ -23,12 +23,23 @@ main{
         margin-top: 50px;
         text-align: center;
     }
+    .card{
+        background-color: #edeec9;
+        display: inline-flex;
+        margin-left: 10px;
+    }
+    .card:hover{
+        transform: scale(1.05);
+        transition: 0.3s;
+        border: #A3B18A;
+        box-shadow: 0px 13px 30px -3px rgb(61, 60, 60);
+    }
     .box-imagen{
         display: flex;
         justify-content: center;
     }
     .casa{
-        width: 400px;
+        width: 17rem;
         height: 300px;
         object-fit: cover;
         margin-top: 3%;
@@ -38,11 +49,7 @@ main{
         cursor: pointer;  
         display: flex;
     }
-    .casa:hover{
-        transform: scale(1.05);
-        transition: 0.3s;
-        box-shadow: 0px 13px 30px -3px rgb(61, 60, 60);
-    }
+    
     .box-texto{
         margin-top: -4%;
         margin-right: 1%;

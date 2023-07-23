@@ -8,15 +8,15 @@
 
 /*GENERAL*/
 body{
-    // width: 98,5vw;
-    // height: 98vh;
     margin: 0;
     padding: 0;
     background-color: #edeec9;
     align-items: center;
     header{
         background-color: #A3B18A;
-        // margin-bottom: 20px;
+        .logo{
+            width: 13%;
+        }
     }
     main{
         h1{

@@ -1,30 +1,27 @@
 /*DESTINOS*/
 
-.container2 {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-auto-rows: auto auto;
-    justify-content: center;
-  
-    grid-template-areas:
-      "section-uno section-dos"
-      "section-tres section-cuatro";
-  
-    gap: 10px;  
-}
-  main {
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    .main-titulo {
-      background-color: purple;
-      width: 100%;
-      margin-left: 50px;
-      grid-area: main-titulo;
-      
-    }
+main {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  .main-titulo {
+  width: 100%;
+  margin-left: 50px;
+  grid-area: main-titulo;
   }
+}
+.container2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-auto-rows: auto auto;
+  justify-content: center;
   
+  grid-template-areas:
+  "section-uno section-dos"  
+  "section-tres section-cuatro";
+  
+  gap: 10px;  
+
   section.destino {
     width: 330px;
     height: 270px;
@@ -66,68 +63,5 @@
     margin-top: 1%;
     text-align: center;
     font-size: 24px;
+  }
 }
-
-// div{
-//     .container2{
-//         display: grid;
-//         grid-template-columns: auto auto;
-//         grid-auto-rows: auto auto;
-//         justify-content: center;
-
-//         grid-template-areas: 
-//         "main-titulo main-titulo"
-//         "section-uno section-dos"
-//         "section-tres section-cuatro"
-//         "footer footer";
-
-//         gap: 10px;
-//         main{
-//             .main-titulo{
-//                 grid-area: main-titulo;
-//             }
-//         }
-//         section{
-//             .destino{
-//                 width: 330px;
-//                 height: 270px;
-//                 margin: 15px;
-//             }
-//             .section-uno{
-//                 grid-area: section-uno;
-//             }
-//             .section-dos{
-//                 grid-area: section-dos;
-//             }
-//             .section-tres{
-//                 grid-area: section-tres;
-//             }
-//             .section-cuatro{
-//                 grid-area: section-cuatro;
-//             }
-//             .destino-img{
-//                 width: 330px;
-//                 height: 270px;
-//                 object-fit: cover;
-//                 justify-content: center;
-//                 align-items: center;
-//                 cursor: pointer;            
-//             }
-//             .destino-img:hover{
-//                 transform: scale(1.05);
-//                 transition: 0.1s;
-//                 box-shadow: 0px 10px 30px -1px rgb(61, 60, 60);
-//             }
-//             h2{
-//                 .subtitulo{
-//                     margin-top: 1%;
-//                     text-align: center;
-//                     font-size: 24px;
-//                 }
-//             }
-//         }
-//         footer{
-//             grid-area: footer;
-//         }
-//     }
-//}

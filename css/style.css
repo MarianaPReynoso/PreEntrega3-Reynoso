@@ -13,6 +13,8 @@ body {
   align-items: center; }
   body header {
     background-color: #A3B18A; }
+    body header .logo {
+      width: 13%; }
   body main h1 {
     margin-top: 30px;
     text-align: center; }
@@ -44,12 +46,23 @@ main .subtitulo-home {
   margin-top: 50px;
   text-align: center; }
 
+main .card {
+  background-color: #edeec9;
+  display: inline-flex;
+  margin-left: 10px; }
+
+main .card:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  border: #A3B18A;
+  box-shadow: 0px 13px 30px -3px #3d3c3c; }
+
 main .box-imagen {
   display: flex;
   justify-content: center; }
 
 main .casa {
-  width: 400px;
+  width: 17rem;
   height: 300px;
   object-fit: cover;
   margin-top: 3%;
@@ -58,11 +71,6 @@ main .casa {
   margin-right: 3%;
   cursor: pointer;
   display: flex; }
-
-main .casa:hover {
-  transform: scale(1.05);
-  transition: 0.3s;
-  box-shadow: 0px 13px 30px -3px #3d3c3c; }
 
 main .box-texto {
   margin-top: -4%;
@@ -120,57 +128,49 @@ section {
     right: 20px; }
 
 /*DESTINOS*/
-.container2 {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-auto-rows: auto auto;
-  justify-content: center;
-  grid-template-areas: "section-uno section-dos" "section-tres section-cuatro";
-  gap: 10px; }
-
 main {
   justify-content: center;
   align-items: center;
   text-align: center; }
   main .main-titulo {
-    background-color: purple;
     width: 100%;
     margin-left: 50px;
     grid-area: main-titulo; }
 
-section.destino {
-  width: 330px;
-  height: 270px;
-  margin: 15px; }
-
-.section-uno {
-  grid-area: section-uno; }
-
-.section-dos {
-  grid-area: section-dos; }
-
-.section-tres {
-  grid-area: section-tres; }
-
-.section-cuatro {
-  grid-area: section-cuatro; }
-
-.destino-img {
-  width: 330px;
-  height: 270px;
-  object-fit: cover;
+.container2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-auto-rows: auto auto;
   justify-content: center;
-  align-items: center;
-  cursor: pointer; }
-  .destino-img:hover {
-    transform: scale(1.05);
-    transition: 0.1s;
-    box-shadow: 0px 10px 30px -1px #3d3c3c; }
-
-.subtitulo {
-  margin-top: 1%;
-  text-align: center;
-  font-size: 24px; }
+  grid-template-areas: "section-uno section-dos"   "section-tres section-cuatro";
+  gap: 10px; }
+  .container2 section.destino {
+    width: 330px;
+    height: 270px;
+    margin: 15px; }
+  .container2 .section-uno {
+    grid-area: section-uno; }
+  .container2 .section-dos {
+    grid-area: section-dos; }
+  .container2 .section-tres {
+    grid-area: section-tres; }
+  .container2 .section-cuatro {
+    grid-area: section-cuatro; }
+  .container2 .destino-img {
+    width: 330px;
+    height: 270px;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; }
+    .container2 .destino-img:hover {
+      transform: scale(1.05);
+      transition: 0.1s;
+      box-shadow: 0px 10px 30px -1px #3d3c3c; }
+  .container2 .subtitulo {
+    margin-top: 1%;
+    text-align: center;
+    font-size: 24px; }
 
 /*PROMOCIONES*/
 main .promociones .subtitulo-prom {
