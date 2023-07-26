@@ -171,18 +171,22 @@ main {
     text-shadow: 2px 2px 4px black; }
 
 /*PROMOCIONES*/
-main div {
+main .promo {
+  margin: 10px 35px;
+  text-align: justify; }
+
+main .card {
   margin-top: 40px; }
-  main div .card-title {
+  main .card .card-title {
     margin-top: 120px; }
-  main div .card-text {
+  main .card .card-text {
     margin-top: 10px; }
-  main div .card-img {
+  main .card .card-img {
     width: 800px;
     height: 250px;
     object-fit: cover;
     cursor: pointer; }
-  main div:hover {
+  main .card .card-img:hover {
     transform: scale(1.02);
     transition: .5s; }
 
@@ -196,13 +200,15 @@ fieldset {
     align-items: flex-start; }
   fieldset input, fieldset textarea {
     width: 100%;
-    padding: 5px; }
+    padding: 5px;
+    border-radius: 4px; }
   fieldset .boton {
     width: 50%;
     margin-top: 5px;
     margin-left: 100px;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    border-radius: 4px; }
 
 .contacto {
   margin-left: -5px;
@@ -214,3 +220,64 @@ fieldset {
     width: 2%;
     margin: 0;
     padding: 0; }
+
+@media screen and (min-width: 320px) {
+  header .logo {
+    display: none; }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; }
+  main .carousel {
+    display: none; }
+  main .casa:hover {
+    box-shadow: none;
+    transform: none; }
+  main .card .card-img {
+    width: 310px;
+    height: 200px; }
+  main .card .card-img:hover {
+    transform: none;
+    transition: none;
+    box-shadow: none; }
+  main fieldset {
+    margin: 20px 10px;
+    padding: 0;
+    width: auto; }
+  .container2 {
+    display: grid;
+    grid-template-columns: 1 auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "section-uno" "section-dos" "section-tres" "section-cuatro"; }
+    .container2 .destino-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 310px;
+      height: 200px; }
+  section .casa2 {
+    display: none; } }
+
+@media screen and (min-width: 600px) {
+  header .logo {
+    display: none; }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      main .card .card-img {
+        width: 500px;
+        height: 250px; }
+  .container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .container2 .destino-img {
+      width: 330px;
+      height: 270px; }
+  section .casa2 {
+    display: none; } }

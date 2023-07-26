@@ -1,7 +1,11 @@
 /*PROMOCIONES*/
 
 main{
-    div{
+    .promo{
+        margin: 10px 35px;
+        text-align: justify;
+    }
+    .card{
         margin-top: 40px;
         .card-title{
             margin-top: 120px;
@@ -15,7 +19,7 @@ main{
             object-fit: cover;
             cursor: pointer;
         }
-        &:hover{
+        .card-img:hover{
             transform: scale(1.02);
             transition: .5s;  
         }
