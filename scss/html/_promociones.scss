@@ -2,8 +2,7 @@
 
 main{
     .promo{
-        margin: 10px 35px;
-        text-align: justify;
+        @extend %texto-parrafo;
     }
     .card{
         margin-top: 40px;

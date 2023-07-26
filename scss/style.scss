@@ -1,3 +1,7 @@
+@import "../scss/utilidades/variables";
+@import "../scss/utilidades/extend";
+@import "../scss/utilidades/mixin";
+
 /*RESET*/
 *{
     margin: 0;
@@ -10,10 +14,10 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #edeec9;
+    background-color: $color-secundario;
     align-items: center;
     header{
-        background-color: #A3B18A;
+        background-color: $color-principal;
         .logo{
             width: 13%;
         }

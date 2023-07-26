@@ -1,4 +1,43 @@
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 600px){
+    header{
+        .logo{
+            display: none;
+        }
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .carousel{
+            display: none;
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .card-img{
+                width: 500px;
+                height: 250px;
+            }
+        }
+    }
+    .container2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .destino-img{
+            width: 330px;
+            height: 270px;
+        }
+    }
+    section{
+        .casa2{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
     header{
         .logo{
             display: none;
@@ -59,38 +98,3 @@
     }
 }
 
-@media screen and (min-width: 600px){
-    header{
-        .logo{
-            display: none;
-        }
-    }
-    main{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .card{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            .card-img{
-                width: 500px;
-                height: 250px;
-            }
-        }
-    }
-    .container2{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .destino-img{
-            width: 330px;
-            height: 270px;
-        }
-    }
-    section{
-        .casa2{
-            display: none;
-        }
-    }
-}
