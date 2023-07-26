@@ -1,6 +1,6 @@
 main .parrafo-home, main .promo {
   margin: 10px 35px;
-  text-align: justify; }
+  text-align: center; }
 
 /*RESET*/
 * {
@@ -233,8 +233,18 @@ fieldset {
       flex-direction: column;
       align-items: center; }
       main .card .card-img {
-        width: 500px;
+        width: 400px;
         height: 250px; }
+    main .card:hover {
+      transform: none;
+      transition: none;
+      box-shadow: none; }
+    main form {
+      width: auto; }
+      main form fieldset {
+        margin: 20px 10px;
+        padding: 0;
+        width: auto; }
   .container2 {
     display: flex;
     flex-direction: column;
@@ -264,10 +274,12 @@ fieldset {
     transform: none;
     transition: none;
     box-shadow: none; }
-  main fieldset {
-    margin: 20px 10px;
-    padding: 0;
+  main form {
     width: auto; }
+    main form fieldset {
+      margin: 20px 10px;
+      padding: 0;
+      width: auto; }
   .container2 {
     display: grid;
     grid-template-columns: 1 auto;
