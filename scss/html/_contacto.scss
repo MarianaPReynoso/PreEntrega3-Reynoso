@@ -13,14 +13,21 @@ fieldset{
         padding: 5px;
         border-radius: 4px;
     }
+    .label-boton{
+        display: none;
+    }
     .boton{
         width: 50%;
         margin-top: 5px;
         margin-left: 100px;
         display: flex;
         justify-content: center;
+        align-items: center;
         border-radius: 4px;
     }
+}
+.titulo-cto{
+    font-size: 1.3rem;
 }
 .contacto{
     margin-left: -5px;
